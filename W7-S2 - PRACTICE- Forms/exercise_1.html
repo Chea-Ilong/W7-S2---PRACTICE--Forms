@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    input[type="checkbox"]:checked + label {
+      color: red;
+    }
+
+    input[type="checkbox"] {
+      color: #fff;
+      transition: all 0.2s;
+      box-shadow: 0 0 5px rgb(121, 113, 113);
+    }
+    .search-bar {
+      padding: 10px;
+      border-radius: 30px;
+      border: 1px solid black;
+    }
+    .search-bar:focus {
+      box-shadow: 0 0 5px rgba(20, 20, 20, 0.959);
+      transition: 0.2s ease;
+      background-color: rgb(206, 204, 204);
+    }
+    .search-bar:hover {
+      box-shadow: 0 0 5px rgba(20, 20, 20, 0.959);
+      transition: 0.2s ease;
+    }
+    .styled {
+      background-color: gray;
+      padding: 5px;
+      border-radius: 30px;
+      border-style: none;
+      color: white;
+      box-shadow: 0 0 5px rgba(13, 14, 13, 0.959);
+    }
+
+    .styled:hover {
+      background-color: rgb(19, 19, 18);
+      cursor: pointer;
+      color: white;
+      box-shadow: 0 0 5px rgb(121, 113, 113);
+      transition: 0.2s ease;
+    }
+
+    .highlight-on-focus:focus {
+      background-color: rgb(99, 94, 94);
+      border: 1px solid gray;
+      transition: ease;
+    }
+
+    .highlight-on-focus:hover {
+      border-color: gray;
+      border: 1px solid whiteblack;
+      transition: ease;
+    }
+    .highlight-on-focus {
+      border: 1px solid black;
+    }
+  </style>
+  <body>
+    <form action="name">
+      <label for="">first name: </label>
+      <input
+        type="text"
+        class="highlight-on-focus"
+        placeholder="Type here...."
+      />
+    </form>
+    <br />
+    <form action="name">
+      <label for="">Last name: </label>
+      <input
+        type="text"
+        class="highlight-on-focus"
+        placeholder="Type here...."
+      />
+    </form>
+    <br />
+    <form action="">
+      <input class="styled" type="button" value="Login" />
+      <input class="styled" type="button" value="Sign up" />
+    </form>
+    <br />
+    <form action="">
+      <input type="text" class="search-bar" placeholder="Search..." />
+    </form>
+    <br />
+    <form>
+      <input type="checkbox" />
+      <label for="vehicle1"> I am Dara</label><br />
+      <input type="checkbox" />
+      <label for="vehicle2"> I am Ilong</label><br />
+      <input type="checkbox" />
+      <label for="vehicle3"> I am Terry</label>
+    </form>
+    <form>
+      <label for="second"><p>Example</p>
+      </label>
+   
+      <input type="checkbox" id="vehicle1" />
+      <label for="vehicle1"> I am Dara</label><br />
+      <input type="checkbox" id="vehicle2" />
+      <label for="vehicle2"> I am Ilong</label><br />
+      <input type="checkbox" id="vehicle3" />
+      <label for="vehicle3"> I am Terry</label>
+  </form>
+  </body>
+  <script>
+     
+    var checkbox = document.getElementById("vehicle1");
+    checkbox.indeterminate = true;
+</script>
+</html>

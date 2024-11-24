@@ -35,6 +35,13 @@
     margin: 0;
         padding: 0;
     }
+    button:hover {
+      background-color: rgb(17, 92, 67);
+      cursor: pointer;
+      padding: 16px 21px 16px 21px;
+      transition: 0.3s ease;
+      font-size: medium;
+    }
     button {
       margin: 10px;
       background-color: rgb(35, 173, 127);
@@ -44,6 +51,7 @@
       padding: 11px 16px 11px 16px;
 
       border-radius: 5px;
+      margin-right: 38px;
     }
     .header {
       text-align: center;
@@ -67,7 +75,7 @@
     }
 
     .email input {
-      width: 100%;
+      width: 620px;
       box-sizing: border-box;
     }
 
@@ -153,34 +161,41 @@
       font-family: sans-serif;
     }
     textarea {
-      width: 100%;
+      width: 620px;
       height: 100px;
     }
-    input:hover{
-        background-color: whitesmoke;
-    }
-    textarea:hover{
-        background-color: whitesmoke;
+    div.container > div.file > form:nth-child(1) > input[type="file"] {
 
+      background-color: white;
+      box-shadow: 0 0 0px rgba(20, 20, 20, 0.959);
     }
-    select:hover{
-        background-color: whitesmoke;
 
+    input:hover {
+      background-color: whitesmoke;
+      box-shadow: 0 0 3px rgba(20, 20, 20, 0.959);
     }
-    input:focus{
-        background-color: rgb(143, 140, 140);
-    
+    textarea:hover {
+      background-color: whitesmoke;
+      box-shadow: 0 0 3px rgba(20, 20, 20, 0.959);
     }
-    textarea:focus{
-        background-color: rgb(143, 140, 140);
-
-
+    select:hover {
+      background-color: whitesmoke;
+      box-shadow: 0 0 5px rgba(20, 20, 20, 0.959);
     }
-    select:focus{
-        background-color: rgb(143, 140, 140);
-
-
+    input:focus {
+      background-color: rgb(196, 234, 247);
     }
+    textarea:focus {
+      background-color: rgb(196, 234, 247);
+    }
+    select:focus {
+      background-color: rgb(196, 234, 247);
+    }
+    .income input:hover {
+      background-color: white;
+      box-shadow: 0 0 0px rgba(20, 20, 20, 0.959);
+    }
+  
   </style>
   <body>
     <div class="main">
